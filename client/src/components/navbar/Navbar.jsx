@@ -18,13 +18,14 @@ function Navbar() {
     <nav>
       <div className="left">
         <a href="/" className="logo">
-          <img src="/logo.png" alt="" />
-          <span>LamaEstate</span>
+          <img src="/house.jpeg" alt="Haven Properties Logo" style={{ width: '100px', height: 'auto' }} />
+          <span>Haven Properties</span>
         </a>
         <a href="/">Home</a>
         <a href="/">About</a>
-        <a href="/">Contact</a>
+        <a href="/">Contacts</a>
         <a href="/">Agents</a>
+        <a href="/add-new-listing">Add Listing</a>
       </div>
       <div className="right">
         {currentUser ? (
@@ -57,10 +58,11 @@ function Navbar() {
         <div className={open ? "menu active" : "menu"}>
           <a href="/">Home</a>
           <a href="/">About</a>
-          <a href="/">Contact</a>
+          <a href="/">Contacts</a>
           <a href="/">Agents</a>
           <a href="/">Sign in</a>
           <a href="/">Sign up</a>
+          <a href="/add-new-listing" className="add-new-listing">Add Listing</a>
         </div>
       </div>
     </nav>

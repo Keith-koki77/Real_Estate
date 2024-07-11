@@ -12,6 +12,9 @@ import Register from "./routes/register/register";
 import ProfileUpdatePage from "./routes/profileUpdatePage/profileUpdatePage";
 import NewPostPage from "./routes/newPostPage/newPostPage";
 import { listPageLoader, profilePageLoader, singlePageLoader } from "./lib/loaders";
+import AddNewListing from "./routes/add-new-listing/add-new-listing";
+import EditListing from "./routes/edit-listing/edit-listing";
+//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   const router = createBrowserRouter([
@@ -60,6 +63,14 @@ function App() {
           path:"/add",
           element:<NewPostPage />
         },
+        {
+          path:"/add-new-listing",
+          element:<AddNewListing/>
+        },
+        {
+          path:"/edit-listing",
+          element:<EditListing/>
+        }
       ],
     },
   ]);
